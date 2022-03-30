@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="info">
+    <div class="image">
+        <img id="img" src="{{image_link}}" alt="Thumbnail of the video">
+    </div>
+    <div class="name">
+        <p id="name">{{title}}</p>
+    </div>
+    <div class="download">
+        <div class="mp3">
+            <h3>Download Audio</h3>
+            <div class="nav">
+            <form action="/download_mp3" method="post">
+                    <input type="text" name="link" value="{{link}}" hidden>
+                    <p>For Audio</p>
+                    <button class="button" type="submit">Download</button>
+            </form>
+            </div>
+        </div>
+        <div class="mp4">
+            <h3>Download Video</h3>
+            {% for res in reses %}
+            <div class="nav">
+                <form action="/download_mp4" method="post">
+                <p>For {{res}}p</p>
+                <input name="link" type="text" value="{{link}}" hidden>
+                <button class="button" name="res" type="submit" value="{{res}}p">Download</button>
+                </form>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

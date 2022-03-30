@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style/style.css">
+    <script src="../static/js/main.js"></script>
+    <title>ytdownldr</title>
+</head>
+<body>
+    <div id="mainbar">
+        <a href="/">ytdownldr</a>
+    </div>
+    <div id="text">
+        <h2>Note</h2>
+        <ol>
+            <li>Paste The Youtube Video Link.</li>
+            <li>Press Go.</li>
+            <li>Scroll Down For Informations.</li>
+            <li>Download File For Need.</li>
+        </ol>
+    </div>
+    <div class="form">
+        <form action="/download" method="post">
+            <input id="link" type="text" name="link" placeholder="Enter Link....." autocomplete="off">
+            <input id="go" type="submit" value="Go" >
+        </form> 
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

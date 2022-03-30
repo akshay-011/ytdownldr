@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    background-color: #d1d6da;
+    margin: 0;
+    align-items: center;
+}
+#mainbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #a775ba;
+    a{
+        text-decoration: none;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 50px;
+        text-transform: capitalize;
+        letter-spacing: 2.5px;
+    }
+}
+#text{
+    margin-top: 20vh;
+    background-color: white;
+    height: auto;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 10px;
+    border-color: black;
+    text-align: left;
+    h2{
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-style: dashed;
+        color: #a775ba;
+        font-size: x-large;
+        font-weight: bolder;
+    }
+    ol{
+        color: #a775ba;
+        font-family: inherit;
+        font-size: large;
+        font-weight: bolder;
+        word-spacing: 1px;
+        li{
+            margin: 8px;
+        }
+    }
+}
+.form{
+    align-items: center;
+    margin-top: 20%;
+    max-width: 850px;
+    width: auto;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    #link{
+        text-align: center;
+        height: 30px;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        border-radius: 8px;
+    }
+    #go{
+        align-items: center;
+        margin-top: 3%;
+        height: 5vh;
+        width: 10vh;
+        border-radius: 1.5vh;
+        font-family: "Noto Sans", sans-serif;
+        transition: 1.5s;
+    }
+    #go:hover{
+        border-color: black;
+        color: white;
+        background-color: #a775ba;
+    }
+}
+.info{
+    margin: 0;
+    align-items: center;
+    display: grid;
+    .image{
+        margin-top: 20%;
+        display: block;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 5px;
+        text-align: center;
+        #img{
+            max-width: 100%;
+            height: auto;
+            width: auto;
+            border-radius: 10%;
+        }
+    }
+    .name{
+        display: block;
+        background-color: white;
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+        border-radius: 5px;
+        text-align: center;
+        #name{
+            font-family: "Noto Sans", sans-serif;
+            font-size: 20px;
+        }
+    }
+    .download{
+        margin: 0;
+        align-items: center;
+        h3{
+            font-size: xx-large;
+            color: #a775ba;
+        }
+        p{
+            color: #a775ba;
+            font-family: inherit;
+            font-size: large;
+            font-weight: bolder;
+        }
+        .mp3{
+            text-align: center;
+            height: 80%;
+            width: 100%;
+            background-color: #d1d6da;
+        }
+        .mp4{
+            align-items: center;
+            text-align: center;
+            height: auto;
+            width: auto;
+            background-color: #d1d6da; 
+        }
+        .button{
+            height: 5vh;
+            width: 15vh;
+            color: #a775ba;
+            border-color: #a775ba;
+            transition: .5s;
+        }
+        .button:hover{
+            color: white;
+            background-color: #a775ba;
+        }
+        .nav{
+            align-items: center;
+            height: 100px;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+        }
+    }
+}
