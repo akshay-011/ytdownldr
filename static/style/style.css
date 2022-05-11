@@ -9,11 +9,14 @@ body {
 }
 
 #mainbar {
+  margin-left: 15%;
   position: fixed;
   top: 0;
   width: 100%;
   text-align: center;
   background-color: #a775ba;
+  max-width: 70%;
+  border-radius: 10px;
 }
 
 #mainbar a {
@@ -201,5 +204,127 @@ body {
   text-align: center;
   background-color: white;
   border-radius: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+  body #text {
+    margin-top: 10%;
+    margin-right: 35%;
+    margin-left: 35%;
+    width: 30%;
+    -webkit-transition: 1s;
+    transition: 1s;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+  body #text h2 {
+    font-size: 40px;
+    margin: 15px;
+    -webkit-transition: 1.2s;
+    transition: 1.2s;
+  }
+  body #text h2:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    font-weight: 40px;
+  }
+  body #text ol {
+    font-size: 150%;
+    margin: 10px;
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+  }
+  body #text ol li {
+    margin: 20px;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  body #text ol li:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 3%;
+    height: auto;
+    width: auto;
+    text-align: center;
+    display: block;
+    align-items: center;
+    width: 80%;
+    margin-left: 20%;
+  }
+  .form #link {
+    margin-bottom: 5px;
+    max-width: 60%;
+    text-align: center;
+    height: 35px;
+    width: 60%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 8px;
+    font-size: 100%;
+  }
+  .form #link::-webkit-input-placeholder {
+    color: #a775ba;
+    font-size: 100%;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .form #link:-ms-input-placeholder {
+    color: #a775ba;
+    font-size: 100%;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .form #link::-ms-input-placeholder {
+    color: #a775ba;
+    font-size: 100%;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .form #link::placeholder {
+    color: #a775ba;
+    font-size: 100%;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .form #go {
+    margin-left: 0%;
+    -webkit-transition: .8s;
+    transition: .8s;
+  }
+  .image {
+    margin-top: 0%;
+  }
+  .info .name {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .info .download h3 {
+    font-size: 40px;
+  }
+  .info .download .nav {
+    margin-top: 6%;
+    margin-bottom: 4%;
+    width: 350px;
+    height: 175px;
+  }
+  .info .download .nav p {
+    font-size: 30px;
+  }
+  .info .download .nav .button {
+    height: 40px;
+    width: 50%;
+    margin-top: 5%;
+    font-size: 20px;
+    font-weight: bolder;
+  }
 }
 /*# sourceMappingURL=style.css.map */
