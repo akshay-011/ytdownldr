@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #d1d6da;
     margin: 0;
     align-items: center;
 }
 #mainbar{
-    margin-left: 15%;
+    margin-left: 5%;
     position: fixed;
     top: 0;
     width: 100%;
     text-align: center;
     background-color: #a775ba;
-    max-width: 70%;
+    max-width: 90%;
     border-radius: 10px;
     a{
         text-decoration: none;
@@ -74,10 +77,9 @@ body{
         width: 10vh;
         border-radius: 1.5vh;
         font-family: "Noto Sans", sans-serif;
-        transition: 1.5s;
+        transition: 0.3s;
     }
     #go:hover{
-        border-color: black;
         color: white;
         background-color: #a775ba;
     }
@@ -144,7 +146,7 @@ body{
             width: 15vh;
             color: #a775ba;
             border-color: #a775ba;
-            transition: .5s;
+            transition: .2s;
         }
         .button:hover{
             color: white;
@@ -162,6 +164,16 @@ body{
         }
     }
 }
+.error{
+    align-items: center;
+    h1{
+        font-family: "Noto Sans", sans-serif;
+        font-size: 35px;
+        color: #a775ba;
+        margin-left: 5%;
+        border-color: black;
+        }
+    }   
 @media only screen and (min-width: 768px) {
     body{
         margin: 0;
@@ -223,10 +235,6 @@ body{
             font-size: 100%;
             transition: 1s;
         }
-        #go{
-            margin-left: 0%;
-            transition: .8s;
-        }
     }
     .image{
         margin-top: 0%;
@@ -253,8 +261,18 @@ body{
                     margin-top: 5%;
                     font-size: 20px;
                     font-weight: bolder;
+                    transition: 1s;
+                }
+                .button:hover{
+                    color: white;
+                    background-color: #a775ba;
                 }
             }
+        }
+    }
+    .error{
+        h1{
+            margin-left: 30%;
         }
     }
 }

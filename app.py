@@ -9,13 +9,16 @@ def home_page():
 
 @app.route("/download",methods=['POST'])
 def download():
-    from main import youtube
-    link = request.form.get("link")
-    yt = youtube(link)
-    image = yt.get_image()
-    title = yt.get_title()
-    reses = yt.get_video_info()
-    return render_template("download.html", image_link = image, title=title, reses=reses, link=link)
+    try:
+        from main import youtube
+        link = request.form.get("link")
+        yt = youtube(link)
+        image = yt.get_image()
+        title = yt.get_title()
+        reses = yt.get_video_info()
+        return render_template("download.html", image_link = image, title=title, reses=reses, link=link)
+    except:
+        return render_template("error.html")
 
 @app.route("/download_mp4", methods=['POST'])
 def download_mp4():

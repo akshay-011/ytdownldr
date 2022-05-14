@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #d1d6da;
   margin: 0;
@@ -9,13 +13,13 @@ body {
 }
 
 #mainbar {
-  margin-left: 15%;
+  margin-left: 5%;
   position: fixed;
   top: 0;
   width: 100%;
   text-align: center;
   background-color: #a775ba;
-  max-width: 70%;
+  max-width: 90%;
   border-radius: 10px;
 }
 
@@ -93,12 +97,11 @@ body {
   width: 10vh;
   border-radius: 1.5vh;
   font-family: "Noto Sans", sans-serif;
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .form #go:hover {
-  border-color: black;
   color: white;
   background-color: #a775ba;
 }
@@ -184,8 +187,8 @@ body {
   width: 15vh;
   color: #a775ba;
   border-color: #a775ba;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .info .download .button:hover {
@@ -204,6 +207,20 @@ body {
   text-align: center;
   background-color: white;
   border-radius: 10px;
+}
+
+.error {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.error h1 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 35px;
+  color: #a775ba;
+  margin-left: 5%;
+  border-color: black;
 }
 
 @media only screen and (min-width: 768px) {
@@ -295,11 +312,6 @@ body {
     -webkit-transition: 1s;
     transition: 1s;
   }
-  .form #go {
-    margin-left: 0%;
-    -webkit-transition: .8s;
-    transition: .8s;
-  }
   .image {
     margin-top: 0%;
   }
@@ -325,6 +337,15 @@ body {
     margin-top: 5%;
     font-size: 20px;
     font-weight: bolder;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .info .download .nav .button:hover {
+    color: white;
+    background-color: #a775ba;
+  }
+  .error h1 {
+    margin-left: 30%;
   }
 }
 /*# sourceMappingURL=style.css.map */
